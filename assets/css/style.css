@@ -7570,6 +7570,7 @@ section.usecase .banner-content .banner-block h3 {
 .listing_section .card_wrapper .content_overlay h3 {
   font-size: 20px;
   padding-top: 10px;
+  padding-inline: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
