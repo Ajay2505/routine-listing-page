@@ -39,32 +39,23 @@ a {
   cursor: pointer;
 }
 .listing_section .card_wrapper .content_overlay {
-  position: absolute;
-  inset: 0;
-  background-color: var(--color-blue);
+  background-color: var(--color-green);
   color: var(--color-white);
   transition: all 0.3s ease-in-out;
   border-top: 1px solid var(--color-green);
 }
 .listing_section .card_wrapper .content_overlay h3 {
   font-size: 20px;
-  padding-top: 10px;
+  padding-block: 10px;
   position: absolute;
-  top: 50%;
+  bottom: 0;
+  margin: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
   transition: all 0.3s ease-in-out;
   text-align: center;
   width: 100%;
-}
-.listing_section .card_wrapper:hover .content_overlay {
-  transform: translateY(calc(100% - 50px));
-  align-items: flex-start;
-  background-color: #01fcaf;
-  color: var(--color-blue);
-}
-.listing_section .card_wrapper:hover h3 {
-  top: 20px;
+  background-color: var(--color-blue);
 }
 
 /*!
@@ -7559,9 +7550,7 @@ section.usecase .banner-content .banner-block h3 {
 }
 
 .listing_section .card_wrapper .content_overlay {
-  position: absolute;
-  inset: 0;
-  background-color: var(--color-blue);
+  background-color: var(--color-green);
   color: var(--color-white);
   transition: transform 0.3s ease-in-out;
   border-top: 1px solid var(--color-green);
@@ -7572,9 +7561,10 @@ section.usecase .banner-content .banner-block h3 {
   padding-top: 10px;
   padding-inline: 20px;
   position: absolute;
-  top: 50%;
+  bottom: 0;
+  margin: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
   transition: all 0.3s ease-in-out;
   text-align: center;
   width: 100%;
@@ -7585,15 +7575,6 @@ section.usecase .banner-content .banner-block h3 {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.listing_section .card_wrapper:hover .content_overlay {
-  transform: translateY(calc(100% - 50px));
-  align-items: flex-start;
-}
-
-.listing_section .card_wrapper:hover h3 {
-  top: 20px;
 }
 
 @font-face {
